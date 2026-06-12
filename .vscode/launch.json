@@ -1,0 +1,41 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Web (admin panel)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/src/SecilStoreConfig.Web/bin/Debug/net8.0/SecilStoreConfig.Web.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/src/SecilStoreConfig.Web",
+      "stopAtEntry": false,
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_URLS": "http://localhost:5089"
+      },
+      "serverReadyAction": {
+        "action": "openExternally",
+        "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+      }
+    },
+    {
+      "name": "Demo (SERVICE-A consumer)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/src/SecilStoreConfig.Demo/bin/Debug/net8.0/SecilStoreConfig.Demo.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/src/SecilStoreConfig.Demo",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Run Both (Web + Demo)",
+      "configurations": ["Web (admin panel)", "Demo (SERVICE-A consumer)"],
+      "stopAll": true
+    }
+  ]
+}

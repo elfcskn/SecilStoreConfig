@@ -1,0 +1,13 @@
+## .NET build output
+bin/
+obj/
+
+## VS / Rider / user files
+.vs/
+*.user
+*.suo
+
+## SQLite local files (DB lives in LocalAppData, but ignore any strays)
+*.db
+*.db-shm
+*.db-wal

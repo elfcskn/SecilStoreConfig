@@ -1,0 +1,40 @@
+@model SecilStoreConfig.Library.Models.ConfigItem
+@{
+    ViewData["Title"] = "New Configuration";
+}
+
+<h1 class="h3 mb-3">New Configuration</h1>
+
+<form asp-action="Create" method="post" style="max-width: 520px;">
+    <div asp-validation-summary="All" class="text-danger mb-2"></div>
+
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label">Name</label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Type" class="form-label">Type</label>
+        <select asp-for="Type" class="form-select">
+            <option value="string">string</option>
+            <option value="int">int</option>
+            <option value="bool">bool</option>
+            <option value="double">double</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Value" class="form-label">Value</label>
+        <input asp-for="Value" class="form-control" />
+        <div class="form-text">For bool use 1/0 or true/false.</div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="ApplicationName" class="form-label">Application Name</label>
+        <input asp-for="ApplicationName" class="form-control" placeholder="e.g. SERVICE-A" />
+    </div>
+    <div class="form-check mb-3">
+        <input asp-for="IsActive" class="form-check-input" />
+        <label asp-for="IsActive" class="form-check-label">Active</label>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a class="btn btn-secondary" asp-action="Index">Cancel</a>
+</form>

@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{468D200A-77EF-4311-AE2E-6EF62DB94D1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecilStoreConfig.Library", "src\SecilStoreConfig.Library\SecilStoreConfig.Library.csproj", "{39A48C79-1A11-4793-B353-58999AB14AFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecilStoreConfig.Web", "src\SecilStoreConfig.Web\SecilStoreConfig.Web.csproj", "{60975EE8-2E86-4B0C-824C-F66A75B55878}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecilStoreConfig.Demo", "src\SecilStoreConfig.Demo\SecilStoreConfig.Demo.csproj", "{6A081426-DB9F-415D-9F31-115431F7FA49}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{49CF3C37-E3A4-40FE-A9E1-DFCD7B347415}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecilStoreConfig.Library.Tests", "tests\SecilStoreConfig.Library.Tests\SecilStoreConfig.Library.Tests.csproj", "{6A29CDB4-7A23-4509-AFC1-212A858B4CF1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{39A48C79-1A11-4793-B353-58999AB14AFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39A48C79-1A11-4793-B353-58999AB14AFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39A48C79-1A11-4793-B353-58999AB14AFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39A48C79-1A11-4793-B353-58999AB14AFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60975EE8-2E86-4B0C-824C-F66A75B55878}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60975EE8-2E86-4B0C-824C-F66A75B55878}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60975EE8-2E86-4B0C-824C-F66A75B55878}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60975EE8-2E86-4B0C-824C-F66A75B55878}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A081426-DB9F-415D-9F31-115431F7FA49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A081426-DB9F-415D-9F31-115431F7FA49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A081426-DB9F-415D-9F31-115431F7FA49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A081426-DB9F-415D-9F31-115431F7FA49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A29CDB4-7A23-4509-AFC1-212A858B4CF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A29CDB4-7A23-4509-AFC1-212A858B4CF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A29CDB4-7A23-4509-AFC1-212A858B4CF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A29CDB4-7A23-4509-AFC1-212A858B4CF1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{39A48C79-1A11-4793-B353-58999AB14AFE} = {468D200A-77EF-4311-AE2E-6EF62DB94D1D}
+		{60975EE8-2E86-4B0C-824C-F66A75B55878} = {468D200A-77EF-4311-AE2E-6EF62DB94D1D}
+		{6A081426-DB9F-415D-9F31-115431F7FA49} = {468D200A-77EF-4311-AE2E-6EF62DB94D1D}
+		{6A29CDB4-7A23-4509-AFC1-212A858B4CF1} = {49CF3C37-E3A4-40FE-A9E1-DFCD7B347415}
+	EndGlobalSection
+EndGlobal
